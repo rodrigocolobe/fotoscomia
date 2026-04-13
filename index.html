@@ -32,6 +32,10 @@
             font-size: 0.875rem;
             border: 2px dashed #4B5563;
         }
+        
+        /* Remove a seta padrão do details no Safari/Chrome */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 antialiased relative">
@@ -77,7 +81,7 @@
                     Ver Catálogo Completo
                 </a>
             </div>
-            </div>
+        </div>
     </section>
 
     <section class="py-16 bg-gray-800">
@@ -233,6 +237,155 @@
         </div>
     </section>
 
+    <section class="py-16 bg-gray-800 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mt-2">O que as mamães estão dizendo...</h2>
+                <p class="text-gray-400 mt-4">A satisfação de quem já eternizou momentos mágicos com a gente.</p>
+            </div>
+            
+            <div class="relative max-w-2xl mx-auto rounded-xl shadow-lg border border-gray-600 overflow-hidden bg-gray-900">
+                <div id="carousel-inner" class="flex transition-transform duration-700 ease-in-out w-full">
+                    <div class="w-full flex-shrink-0 flex justify-center bg-gray-200">
+                        <img src="assets/images/0.jpg" alt="Depoimento Cliente" class="w-full h-auto max-h-[400px] object-contain">
+                    </div>
+                    <div class="w-full flex-shrink-0 flex justify-center bg-gray-200">
+                        <img src="assets/images/melhor.jpg" alt="Depoimento Cliente" class="w-full h-auto max-h-[400px] object-contain">
+                    </div>
+                    <div class="w-full flex-shrink-0 flex justify-center bg-gray-200">
+                        <img src="assets/images/1.jpg" alt="Depoimento Cliente" class="w-full h-auto max-h-[400px] object-contain">
+                    </div>
+                    <div class="w-full flex-shrink-0 flex justify-center bg-gray-200">
+                        <img src="assets/images/4.jpg" alt="Depoimento Cliente" class="w-full h-auto max-h-[400px] object-contain">
+                    </div>
+                    <div class="w-full flex-shrink-0 flex justify-center bg-gray-200">
+                        <img src="assets/images/7.jpg" alt="Depoimento Cliente" class="w-full h-auto max-h-[400px] object-contain">
+                    </div>
+                    <div class="w-full flex-shrink-0 flex justify-center bg-gray-200">
+                        <img src="assets/images/11.jpg" alt="Depoimento Cliente" class="w-full h-auto max-h-[400px] object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white">Dúvidas Frequentes</h2>
+                <p class="text-gray-400 mt-2">Tudo o que você precisa saber antes de contratar.</p>
+            </div>
+            
+            <div class="space-y-4">
+                
+                <details class="group bg-gray-800 rounded-lg border border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-white font-medium">
+                        Quanto tempo para receber minhas fotos?
+                        <span class="transition duration-300 group-open:-rotate-180">
+                            <i class="fas fa-chevron-down text-indigo-400"></i>
+                        </span>
+                    </summary>
+                    <div class="border-t border-gray-700 p-5 text-gray-300 leading-relaxed text-sm">
+                        <br>
+                        Normalmente, os ensaios são entregues <strong>em até 24h</strong>, podendo ser antes dependendo da demanda do dia.<br>
+                        Em períodos de alta procura, o prazo pode se estender um pouco — mas sempre avisamos.
+                    </div>
+                </details>
+
+                <details class="group bg-gray-800 rounded-lg border border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-white font-medium">
+                        Como funciona o pagamento?
+                        <span class="transition duration-300 group-open:-rotate-180">
+                            <i class="fas fa-chevron-down text-indigo-400"></i>
+                        </span>
+                    </summary>
+                    <div class="border-t border-gray-700 p-5 text-gray-300 leading-relaxed text-sm">
+                        Aceitamos <strong>Pix</strong>.<br>
+                        Assim que o pagamento é confirmado, seu ensaio entra na fila de produção.
+                    </div>
+                </details>
+
+                <details class="group bg-gray-800 rounded-lg border border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-white font-medium">
+                        Vocês trabalham com pacotes?
+                        <span class="transition duration-300 group-open:-rotate-180">
+                            <i class="fas fa-chevron-down text-indigo-400"></i>
+                        </span>
+                    </summary>
+                    <div class="border-t border-gray-700 p-5 text-gray-300 leading-relaxed text-sm">
+                        Sim, após o pagamento da primeira foto (R$ 9,99) o cliente pode solicitar por mais fotos, depois da primeira entrega. Desta forma, o cliente pode fazer um ensaio consciente do resultado que receberá, sem surpresas!
+                    </div>
+                </details>
+
+                <details class="group bg-gray-800 rounded-lg border border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-white font-medium">
+                        Posso ver exemplos de ensaios antes de contratar?
+                        <span class="transition duration-300 group-open:-rotate-180">
+                            <i class="fas fa-chevron-down text-indigo-400"></i>
+                        </span>
+                    </summary>
+                    <div class="border-t border-gray-700 p-5 text-gray-300 leading-relaxed text-sm">
+                        Com certeza. Temos um portfólio com diversos exemplos reais neste link: <br>
+                        <a href="https://eternizia.site/catalogo/" target="_blank" class="text-indigo-400 underline mt-1 inline-block">Acessar Catálogo Completo</a>
+                    </div>
+                </details>
+
+                <details class="group bg-gray-800 rounded-lg border border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-white font-medium">
+                        Posso enviar uma foto de teste antes de contratar (prévia)?
+                        <span class="transition duration-300 group-open:-rotate-180">
+                            <i class="fas fa-chevron-down text-indigo-400"></i>
+                        </span>
+                    </summary>
+                    <div class="border-t border-gray-700 p-5 text-gray-300 leading-relaxed text-sm">
+                        Hoje não trabalhamos com foto-teste por uma questão operacional. Temos uma demanda alta e cada ensaio exige tempo de produção, curadoria e ajustes manuais.<br><br>
+                        Mas você pode:<br>
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li>Ver exemplos reais de outros clientes</li>
+                            <li>Tirar todas as dúvidas antes de contratar</li>
+                            <li>Escolher referências para garantir que o resultado fique como você espera</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="group bg-gray-800 rounded-lg border border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-5 text-white font-medium">
+                        Quais são os próximos passos para contratar?
+                        <span class="transition duration-300 group-open:-rotate-180">
+                            <i class="fas fa-chevron-down text-indigo-400"></i>
+                        </span>
+                    </summary>
+                    <div class="border-t border-gray-700 p-5 text-gray-300 leading-relaxed text-sm">
+                        É simples:<br>
+                        <ol class="list-decimal pl-5 mt-2 space-y-1">
+                            <li>Você escolhe o ensaio desejado</li>
+                            <li>Realiza o pagamento</li>
+                            <li>Envia suas fotos</li>
+                            <li>Nosso time produz seu ensaio</li>
+                            <li>Você recebe as fotos dentro do prazo combinado</li>
+                        </ol>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gradient-to-r from-indigo-900 to-purple-900 border-y border-indigo-500/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-500/20 text-green-400 mb-6">
+                <i class="fa-brands fa-pix text-3xl"></i>
+            </div>
+            <h2 class="text-3xl font-bold text-white mb-4">Indique e ganhe R$ 5 no PIX — <span class="text-green-400">no mesmo dia.</span></h2>
+            <div class="text-gray-200 text-lg max-w-2xl mx-auto leading-relaxed space-y-4">
+                <p>É simples: compartilhou nosso trabalho com um amigo ou familiar e ele fechou uma foto? <strong>R$ 5,00 cai direto no seu PIX antes de a noite acabar.</strong></p>
+                <p class="font-bold text-white bg-black/20 p-3 rounded-lg inline-block">Sem burocracia. Sem letras miúdas. Sem enrolação.</p>
+                <p>Você indica → a pessoa fecha → você recebe. Assim, toda vez.</p>
+                <p class="text-indigo-300 font-medium">E o melhor: não tem limite de indicações. Quanto mais você compartilha, mais você ganha.</p>
+            </div>
+        </div>
+    </section>
+
     <footer id="contato" class="bg-black text-white py-20 pb-32 md:pb-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Eles crescem rápido demais.<br>Não deixe essa fase passar em branco.</h2>
@@ -263,5 +416,19 @@
         <i class="fab fa-whatsapp text-4xl"></i>
     </a>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselInner = document.getElementById('carousel-inner');
+            const slides = carouselInner.children;
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                // Move o container interno baseado na largura de 1 slide (100%)
+                carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }, 3000); // 3000ms = 3 segundos
+        });
+    </script>
 </body>
 </html>
